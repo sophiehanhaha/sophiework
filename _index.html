@@ -1,0 +1,356 @@
+<!DOCTYPE HTML>
+<!--
+	Astral 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sophie Han</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet" />
+        <link rel="stylesheet" href="css/colorbox.css" />
+        
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/jquery.colorbox.js"></script>        
+        
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1', scalePhotos:"true"});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4'});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+        
+        
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/noscript.css" />
+        
+		</noscript>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+    
+    
+
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#me" class="fa fa-home active"><span>Home</span></a>
+						<a href="#work" class="fa fa-sun-o"><span>GUI Work</span></a>
+						<a href="#other" class="fa fa-moon-o"><span>Other Works</span></a>
+                        <a href="#about" class="fa fa-smile-o"><span>About Me</span></a>
+						<a href="#email" class="fa fa-envelope-o"><span>Contact Me</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						
+						<!-- Me -->
+							<article id="me" class="panel">
+								<header>
+									<h1>Sophie Han</h1>
+									<span class="byline">GUI Designer</span>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow fa fa-chevron-right"><span>See my work</span></span>
+									<img src="content/sophiee.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work --> 
+							<article id="work" class="panel">
+								<header><span class="fa fa-sun-o" style="float:left; color:#333">&nbsp;&nbsp;&nbsp;</span>
+									<h2>GUI Work</h2>
+								</header>
+								<p>
+									Hello, This is Sophie, a visual designer interested in apps design and websites design.
+								</p>
+								<section class="is-gallery">
+									<div class="row half">
+										<div class="4u">
+											<a class="group1" href="content/01.jpg" title="home & lock screen on Barbie."><img src="images/01.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a class="group1" href="content/02.jpg" title="Newspaper app icon"><img src="images/02.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a class="group1" href="content/03.jpg" title="Air Fun Monitor"><img src="images/03.jpg" alt=""></a>
+										</div>
+									</div>
+									<div class="row half">
+										<div class="4u">
+											<a class="group1" href="content/08.jpg" title="File Management AP UI on WindowsDT"><img src="images/08.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a class="group2" href="content/09.jpg" title="Photo AP UI on WindowsDT"><img src="images/09.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a class="group3" href="content/06.jpg" title="File Management App UI on Android Phone"><img src="images/06.jpg" alt=""></a>
+										</div>
+									</div>
+									<div class="row half">
+										<div class="4u">
+											<a class="group4" href="content/07.jpg" title="Launcher on Android Phone"><img src="images/07.jpg" alt=""></a>
+										</div>
+								  <div class="4u">
+											<a class="group4" href="content/05.jpg" title="Photo App UI on Android Phone"><img src="images/05.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a class="group4" href="content/04.jpg" title="Touch Tool Panel"><img src="images/04.jpg" alt=""></a>
+										</div>
+									</div>
+									<div class="row half">
+										<div class="4u">
+											<a class="group4" href="content/10.jpg" title="Portal AP UI on WindowsDT"><img src="images/10.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a class="group4" href="content/11.jpg" title="App Icons"><img src="images/11.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a class="group4" href="content/12.jpg" title="Metro UI"><img src="images/12.jpg" alt=""></a>
+										</div>
+									</div>
+<!--									<div class="row half">
+										<div class="4u">
+											<a href="http://flypixel.com/upload-button/9737964647895311" class="image image-full"><img src="images/13.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a href="http://flypixel.com/collapsible-menunavigation/5743165610406316" class="image image-full"><img src="images/14.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a href="http://flypixel.com/3d-button/5506786525606318" class="image image-full"><img src="images/15.jpg" alt=""></a>
+										</div>
+									</div>
+-->								</section>
+							</article>
+                            
+							<article id="other" class="panel">
+								<header><span class="fa fa-moon-o" style="float:left; color: #333;">&nbsp;&nbsp;&nbsp;</span>
+									<h2>Other Works</h2>
+								</header>
+								<p>
+									Here are other types of my work, such as: oil painting, water color, CG, web design, flash...etc. 
+								</p>
+								<section class="is-gallery">
+									<div class="row">
+										<div class="u">
+											<a class="group1" href="other/images71.jpg" title="Pig Idol"><img src="other/thumbs-71.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group1" href="other/images69.jpg" title="Oil painting &amp; Water color"><img src="other/thumbs-69.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group1" href="other/images18.jpg" title="CG Painting"><img src="other/thumbs-18.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group1" href="other/images25.jpg" title="Hakka Idol"><img src="other/thumbs-25.jpg" alt=""></a>
+										</div>
+									</div>
+                                    
+							  <div class="row">
+										<div class="u">
+											<a class="group1" href="other/images04.jpg" title="TS Captain Idol"><img src="other/thumbs-04.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group2" href="other/images07.jpg" title="Russia golden fish online event"><img src="other/thumbs-07.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group3" href="other/images44.jpg" title="Spain eDM campaign"><img src="other/thumbs-44.jpg" alt=""></a>
+								</div>
+										<div class="u">
+											<a class="group3" href="other/images17.jpg" title="Global eDM"><img src="other/thumbs-17.jpg" alt=""></a>
+										</div>
+									</div>
+							  <div class="row">
+										<div class="u">
+											<a class="group4" href="other/images33.jpg" title="Japan Tutor UI"><img src="other/thumbs-33.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group4" href="other/mobile01.jpg" title="Mobile Official Website"><img src="other/thumb-01.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group4" href="other/images47.jpg" title="Japan photo online campaign (twitter)"><img src="other/thumbs-47.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group4" href="other/images19.jpg" title="Official website"><img src="other/thumbs-19.jpg" alt=""></a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="u">
+											<a class="group4" href="other/images10.jpg" title="Taiwan online flash game"><img src="other/thumbs-10.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group4" href="other/images16.jpg" title="Japan eLearnign UI"><img src="other/thumbs-16.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group4" href="other/images52.jpg" title="USA summer DM"><img src="other/thumbs-52.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a class="group4" href="other/images64.jpg" title="Global eCard online event"><img src="other/thumbs-64.jpg" alt=""></a>
+										</div>
+									</div>
+                                    <div class="row">
+										<div class="u">
+											<a href="flash/flash01.html" target="_blank"><img src="flash/thumbs-01.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a href="flash/flash03_1.html" target="_blank"><img src="flash/thumbs-03_1.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a href="flash/flash03_2.html" target="_blank"><img src="flash/thumbs-03_2.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a href="flash/flash03_3.html" target="_blank"><img src="flash/thumbs-03_3.jpg" alt=""></a>
+										</div>
+									</div>    
+                                    
+                                    <div class="row">
+										<div class="u">
+											<a href="flash/flash02.html" target="_blank"><img src="flash/thumbs-02.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a href="flash/flash04.html" target="_blank"><img src="flash/thumbs-04.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a href="flash/flash05.html" target="_blank"><img src="flash/thumbs-05.jpg" alt=""></a>
+										</div>
+										<div class="u">
+											<a href="flash/flash06.html" target="_blank"><img src="flash/thumbs-06.jpg" alt=""></a>
+										</div>
+									</div>                                    
+<!--									<div class="row half">
+										<div class="4u">
+											<a href="http://flypixel.com/upload-button/9737964647895311" class="image image-full"><img src="images/13.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a href="http://flypixel.com/collapsible-menunavigation/5743165610406316" class="image image-full"><img src="images/14.jpg" alt=""></a>
+										</div>
+										<div class="4u">
+											<a href="http://flypixel.com/3d-button/5506786525606318" class="image image-full"><img src="images/15.jpg" alt=""></a>
+										</div>
+									</div>
+-->								</section>
+							</article>
+                            
+						<!-- About -->
+							<article id="about" class="panel">
+								<header><span class="fa fa-smile-o" style="float:left; color:#333">&nbsp;&nbsp;&nbsp;</span>
+									<h2>About Me</h2>
+								</header>
+								<h3>GUI Designer</h3>
+                                <ul class="style1">
+                                    <li>Visual Guideline / Apps Design / Website Design / Graphic Design</li>
+                                </ul>
+                                <h3>Summary of Qualifications</h3>
+                                <ul class="style1">
+                                    <li>Ability in computer graphic design about 5 years of experiences.</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Flash</li>
+                                    <li>Dreamweaver</li>
+                                    <li>css/html</li>
+                                    <li>jQuery</li>
+                                </ul>
+                                
+                                <h3>Work Experiences</h3>
+                                <ul class="style1">
+                                    <li>UI designer of Innovation Lab BU, Acer Inc. 2013~2014<br>
+                                      <span>  
+                                        - Design acer BYOC apps<br>
+                                        - Product app layout and GUI assets for different platforms<br>
+                                        - Brainstorming for the project features<br>
+                                        - Run IDEO design process of project<br><br>
+                                      </span>
+                                  </li>
+                                    <li>Designer of Branding Marketing Dept., Transcend Info, Inc. 2010~2013<br>
+                                       <span>
+                                        - Design Global online promotion event<br>
+                                        - Design Transcend official website / mobile version<br>
+                                        - Product marketing material for global exhibition<br>
+                                        - Formulate website branding guideline<br>
+                                        - Create SNS promotion event<br>
+                                        - Create Branding Character<br>
+                                        - Product promotion animation e-Card<br><br>
+									   </span>
+                                    </li>
+                                    <li>Designer of Digital R & D Dept., Gjun Info Co.,Ltd. 2008~2010<br>
+                                    <span>
+                                    - Design teaching software interface<br>
+                                    - Product graphic design materials<br>
+                                    - Create wallpaper & MSN illustrators<br><br><br>
+									</span>
+                                    </li>
+                                </ul>
+                                <table>
+                                	<tr>
+                                    	<td>objective<td>
+                                    </tr>
+                                	<tr>
+                                    	<td>Graphic Interface Designer<td>
+                                    </tr>
+                                </table>
+							</article>
+
+
+						<!-- Email -->
+						  <article id="email" class="panel">
+								<header><span class="fa fa-envelope-o" style="float:left; color:#333">&nbsp;&nbsp;&nbsp;</span>
+									<h2>Contact Me</h2>
+								</header>
+                                <br>
+                                <h3>Got any questions?</h3><br>
+                                <p><span style="font-size:20px">Contact ME for details: 
+                                <span style="font-size:20px">
+                                <a style="color:#FFCC00" href="mailto:sophiehanhaha@hotmail.com" target="_blank"><b>sophiehanhaha@hotmail.com</b></a></span><br><br><br>
+                                </span>                                
+              					</p>
+							</article>
+
+					</div>
+		
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="links">
+							<li>&copy; Sophie Han</li>
+						</ul>
+					</div>
+		
+			</div>
+
+	</body>
+</html>
