@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>img_shortlink03</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="img_shortlink03">
+            <g id="Group-6" transform="translate(2.000000, 4.000000)">
+                <path d="M2.20730587,0.809253545 L1.99906359,0.809253545 C0.895072792,0.809253545 0,1.70409224 0,2.80793171 L0,39.6758003 C0,40.7829456 0.895011257,41.6744784 1.99906359,41.6744784 L43.8386521,41.6744784 C44.9426429,41.6744784 45.8377157,40.7796397 45.8377157,39.6758003 L45.8377157,39.347462 L4.20810623,39.347462 C3.1030947,39.347462 2.20730587,38.4559292 2.20730587,37.3487838 L2.20730587,0.809253545 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <rect id="Rectangle-7" fill="#FFFFFF" x="6.94476524" y="28.6586453" width="3.76174784" height="7.32140612"></rect>
+                <rect id="Rectangle-7" fill="#FFFFFF" x="14.6611711" y="18.0832809" width="3.76174784" height="17.8967705"></rect>
+                <rect id="Rectangle-7" fill="#FFFFFF" x="22.3775769" y="27.0316662" width="3.76174784" height="8.94838525"></rect>
+                <rect id="Rectangle-7" fill="#FFFFFF" x="30.0939827" y="17.2697914" width="3.76174784" height="18.7102601"></rect>
+                <rect id="Rectangle-7" fill="#FFFFFF" x="37.8103885" y="10.7618748" width="3.76174784" height="25.2181766"></rect>
+                <path d="M9.40436959,18.4319193 L16.1278716,11.1686196" id="Line" stroke="#FF6C00" stroke-width="1.5" stroke-linecap="square" stroke-dasharray="1,2"></path>
+                <path d="M18.1438556,9.13489569 L25.8045946,16.6800251" id="Line" stroke="#FF6C00" stroke-width="1.5" stroke-linecap="square" stroke-dasharray="1,2"></path>
+                <path d="M26.3322349,18.4319193 L41.2827711,2.22023435" id="Line" stroke="#FF6C00" stroke-width="1.5" stroke-linecap="square" stroke-dasharray="1,2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

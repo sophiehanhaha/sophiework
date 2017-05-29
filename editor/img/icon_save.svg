@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_save</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_save" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M15.3333333,9.66666667 L5.88888889,9.66666667 L5.88888889,5.88888889 L15.3333333,5.88888889 L15.3333333,9.66666667 Z M12.5,19.1111111 C10.9351932,19.1111111 9.66666667,17.8425846 9.66666667,16.2777778 C9.66666667,14.712971 10.9351932,13.4444444 12.5,13.4444444 C14.0648068,13.4444444 15.3333333,14.712971 15.3333333,16.2777778 C15.3333333,17.8425846 14.0648068,19.1111111 12.5,19.1111111 L12.5,19.1111111 Z M17.2222222,4 L5.88888889,4 C4.84055556,4 4,4.85 4,5.88888889 L4,19.1111111 C4,20.1543156 4.84568436,21 5.88888889,21 L19.1111111,21 C20.1543156,21 21,20.1543156 21,19.1111111 L21,7.77777778 L17.2222222,4 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

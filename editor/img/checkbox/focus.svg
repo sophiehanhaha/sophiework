@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox/focus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.0982458,22.8377512 L28.7886219,7.1473751 L26.6412468,5 L10.9508707,20.6903761 L3.35875318,13.0982587 L1.21137808,15.2456338 L8.80349557,22.8377512 L8.79533412,22.8459127 L10.9427092,24.9932878 L10.9508707,24.9851264 L10.9657443,25 L13.1131194,22.8526249 L13.0982458,22.8377512 Z" id="path-1"></path>
+    </defs>
+    <g id="Button" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-Portrait" transform="translate(-477.000000, -601.000000)">
+            <g id="checkbox/icon" transform="translate(475.874086, 596.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+                <g id="color/green-light" mask="url(#mask-2)" fill-rule="evenodd" fill="#6DF1C9">
+                    <rect id="Rectangle-19" x="0" y="0" width="30" height="30"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

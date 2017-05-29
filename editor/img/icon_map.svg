@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_map</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_map" fill-rule="nonzero" fill="#333F4D">
+            <path d="M15.3333333,19.7777778 L8.66666667,17.4333333 L8.66666667,4.22222222 L15.3333333,6.56666667 L15.3333333,19.7777778 Z M21.4444444,2 L21.2666667,2 L15.3333333,4.33333333 L8.66666667,2 L2.4,4.11111111 C2.16666667,4.18888889 2,4.38888889 2,4.64444444 L2,21.4444444 C2,21.7512693 2.24873069,22 2.55555556,22 C2.61111111,22 2.67777778,22 2.73333333,21.9666667 L8.66666667,19.6666667 L15.3333333,22 L21.6,19.8888889 C21.8333333,19.7777778 22,19.6111111 22,19.3555556 L22,2.55555556 C22,2.24873069 21.7512693,2 21.4444444,2 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu_form" transform="translate(-22.000000, -29.000000)" fill="#333F4D">
+            <g id="icon/check" transform="translate(22.000000, 29.000000)">
+                <g id="Group-2">
+                    <g id="Group-3">
+                        <path d="M22.2331223,3.86575438 C23.2273422,3.977929 24,4.82207031 24,5.85851238 L24,21.9945819 C24,23.1021437 23.1056789,24 22.0072215,24 L5.78626703,24 C4.82048107,24 4.01516061,23.3133615 3.83238236,22.3925778 L21.2360865,22.3925778 C21.7816537,22.3925778 22.2331223,21.9414026 22.2331223,21.3848499 L22.2331223,3.86575438 Z" id="Combined-Shape"></path>
+                        <path d="M21,3.50789413 L21,1.99456145 C21,0.90234375 20.1070044,0 19.0054385,0 L1.99456145,0 C0.90234375,0 0,0.892995579 0,1.99456145 L0,19.0054385 C0,20.0976562 0.892995579,21 1.99456145,21 L19.0054385,21 C20.0976562,21 21,20.1070044 21,19.0054385 L21,6.59740592 L11.8644219,15.9395608 L4.59492733,10.4874684 L6.15267616,8.41048079 L11.4829859,12.4081922 L20.6916652,3.19956098 L21,3.50789413 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

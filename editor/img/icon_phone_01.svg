@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_phone_01</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_phone_01" fill="#F05623">
+            <path d="M5,2.00246167 C5,1.44881738 5.44994876,1 6.00684547,1 L17.9931545,1 C18.5492199,1 19,1.43945834 19,2.00246167 L19,21.9975383 C19,22.5511826 18.5500512,23 17.9931545,23 L6.00684547,23 C5.45078007,23 5,22.5605417 5,21.9975383 L5,2.00246167 Z M6,2 L6,19 L18,19 L18,2 L6,2 Z M12,22 C12.5522847,22 13,21.5522847 13,21 C13,20.4477153 12.5522847,20 12,20 C11.4477153,20 11,20.4477153 11,21 C11,21.5522847 11.4477153,22 12,22 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

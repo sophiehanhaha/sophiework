@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="37px" viewBox="0 0 36 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_videoPlay</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_videoPlay">
+            <circle id="Oval-11" fill-opacity="0.69" fill="#FF6347" cx="18" cy="18.75" r="18"></circle>
+            <path d="M19.9191341,12.5632122 C20.2399375,12.1140875 20.7572416,12.1101382 21.0808659,12.5632122 L29.3333018,24.1166225 C29.9776514,25.018712 29.6017876,25.75 28.5092049,25.75 L12.4907951,25.75 C11.3913093,25.75 11.0235638,25.0170107 11.6666982,24.1166225 L19.9191341,12.5632122 Z" id="Triangle-2" fill="#FFFFFF" transform="translate(20.500000, 18.750000) rotate(90.000000) translate(-20.500000, -18.750000) "></path>
+        </g>
+    </g>
+</svg>

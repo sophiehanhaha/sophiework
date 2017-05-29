@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="44px" viewBox="0 0 58 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_arrowR" transform="translate(2.000000, 1.000000)" fill-rule="nonzero" fill="#CCCCCC">
+            <path d="M1,8.6959812 L-1.75132155,6.02803303 L13.5878321,-0.911107923 L14.4121679,0.911107923 L1.75132155,6.63863364 L2.12544874,7.00142364 C16.2201389,7.03808259 22.4196019,7.80058815 29.9270063,11.3457514 C39.9720177,16.089229 48.3442458,25.5079856 55.9048187,41.574203 L54.0951813,42.425797 C46.7182542,26.7498269 38.6556419,17.6793881 29.0729937,13.1542486 C22.2863136,9.94942751 16.5456421,9.12072089 4.19978012,9.01289649 L11.6961458,16.2820996 L10.3038542,17.7179004 L1.31362964,9.00010691 C1.20952235,9.00003538 1.10498034,9 1,9 L1,8.6959812 L1,8.6959812 Z" id="Combined-Shape" transform="translate(27.076749, 20.757345) scale(-1, 1) translate(-27.076749, -20.757345) "></path>
+        </g>
+    </g>
+</svg>
