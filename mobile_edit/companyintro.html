@@ -1,0 +1,291 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>好物貼驗證網頁</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="layout.css" rel="stylesheet" type="text/css">
+	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+
+</head>
+
+<style>
+	 .chacha{
+		position: absolute;
+		display: inline-block;
+		width: 160px;
+		overflow: hidden;
+		border-radius: 50px;
+		height: 40px;
+		opacity: 0;
+		line-height: 40px;
+		text-align: center;
+		left: -100px;
+		top: -4px;
+		background-color: rgba(255, 255, 255, 0.9);
+		/*-web-kit-transition: all 0.2s ease-in-out;*/
+		/*-webkit-transition: width 0.1s, background-color 2.5s;*/
+		/*-webkit-transition-timing-function: linear;*/
+		font-size: 16px;
+		transition: .2s;
+	}
+	 .mewmew{
+		position: absolute;
+		display: inline-block;
+		width: 160px;
+		overflow: hidden;
+		border-radius: 50px;
+		height: 40px;
+		opacity: 0;
+		line-height: 40px;
+		text-align: center;
+		left: 0px;
+		top: -4px;
+		background-color: rgba(255, 255, 255, 0.9);
+		/*-web-kit-transition: all 0.2s ease-in-out;*/
+		/*-webkit-transition: width 0.1s, background-color 2.5s;*/
+		/*-webkit-transition-timing-function: linear;*/
+		font-size: 16px;
+		transition: .2s;
+	}
+
+
+  li:hover > .chacha{
+		left: -110px;
+		opacity: 0.8;
+
+
+  }
+  li:hover > .mewmew{
+		left: 10px;
+		opacity: 0.8;
+
+
+  }
+	li{
+		position: relative;
+	}
+
+	a.material-icons:active, ul > li > .chacha, .mewmew {
+		opacity: 0;
+		/*display: inline;*/
+		width: 160px;
+		display: inline-block;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.9);
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	}
+
+</style>
+
+
+<body>
+
+<div id="WRAPPER">
+	<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 24px; left: 24px; width:56px;">
+		<a class="btn-floating btn-large teal">
+		  <i class="material-icons">settings</i>
+		</a>
+		<ul>
+		  <li>
+		  	  <a class="btn-floating"></a>
+			  <div class="mewmew btn teal lighten-2">
+			  	<i class="material-icons left">publish</i>發佈
+			  </div> 
+		  </li>
+		  <li>
+		  	  <a class="btn-floating"></a>
+			  <div class="mewmew btn teal lighten-2">
+			  	<i class="material-icons left">cloud_upload</i>儲存
+			  </div>
+		  </li>
+		</ul>
+	</div>
+
+	<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 24px; right: 24px;">
+		<a class="btn-floating btn-large deep-orange">
+		  <i class="material-icons">add</i>
+		</a>
+		<ul>
+		  <li>
+		  	  <a class="btn-floating"></a>
+			  <div class="chacha btn deep-orange accent-2">
+			  	<i class="material-icons left">restaurant</i>健康食譜
+			  </div> 
+		  </li>
+		  <li>
+		  	  <a class="btn-floating"></a>
+			  <div class="chacha btn deep-orange accent-2">
+			  	<i class="material-icons left">local_florist</i>植物養殖
+			  </div>
+		  </li>
+		  <li>
+		  	  <a class="btn-floating"></a>
+			  <div class="chacha btn deep-orange accent-2">
+			  	<i class="material-icons left">build</i>傢俱說明書
+			  </div>
+		  </li>
+		  <li>
+		      <a class="btn-floating"></a>
+			  <div class="chacha btn deep-orange accent-2">
+			  	<i class="material-icons left">security</i>保固功能
+			  </div>
+		  </li>
+		</ul>
+	</div>
+
+
+
+	<!-- 頁首區 -->
+
+	<div id="BANNER">
+		<h1 class="text1">
+
+			<div class="editor" id="companyProduct">填入公司產品名稱
+			</div>
+			
+
+		</h1>
+	  <h2 class="text2">識別碼:7896940</h2>
+	  <h2 class="text2">掃碼數:0000001</h2>
+	  <h2 class="text2">感謝您的查詢</h2>
+		<div id="gg88">
+			<div style="flex:3"></div>
+		  <h2 class="text2">
+		  <div class="editor" id="companyName" style="flex: 4">填入公司名稱</div></h2>
+			<div style="flex:3"></div>
+		</div>
+	</div>
+
+	<!-- 主選單區 -->
+
+	<!-- 第一內容區 -->
+	<div id="CONTENT-1">
+		<div  class="kerker">
+			<div id="panel">
+				<div class="panel">
+						<input type="file" class="filename1" onchange="readURL(this);"/>
+						<a class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</a>
+						<a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+				</div>
+			</div>
+		  <div class="WORD">
+				<div class="editor" id="companyName" style="margin:10px">
+					<p>What is t,mot? <br>t,mot = together & moment<br>
+				    有緣相聚，要珍惜每個時刻<br><br>我們隱身在台北市台灣大學附近的巷子裡，這個區塊擁有著各式各樣個性化的書店及咖啡店。走在這條路上，都會覺得自己變成了高級知識份子。
+					</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 第二內容區 -->
+
+	<div id="CONTENT-2">
+		<div id="textpanel">
+			<div class="BOX" >
+				<div class="panel">
+				<a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+				
+			    	<h3><div class="editor" id="companyText">品牌保護系統</div></h3>
+			        <p class="editor" id="companyText">嘔心瀝血發想出來、辛辛苦苦製造完成、或是歷經千心萬苦栽種出來的產品，如何讓顧客知道他們買的真的是原創、是原產呢??</p>
+			    </div>
+			</div>
+	    </div>
+	    <div id="textpanel">
+			<div class="BOX">
+				<div class="panel">
+				<a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+				
+					<h3><div class="editor" id="companyText">線下數據追蹤系統</div></h3>
+				  <p class="editor" id="companyText">店員站在大太陽下努力的發出一張又一張的傳單；業務在會展中心、工作中發出一張又一張的名片；老板在店裡擺設了很多典雅的小卡片及在牆上佈置了互動裝置，<br>你想知道這些印刷品發出後的力量嗎?</p>
+				</div>
+			</div>
+		</div>
+	    <div id="textpanel">
+			<div class="BOX">
+				<div class="panel">
+				<a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+					
+					<h3><div class="editor" id="companyText">教育安全系統</div></h3>
+				  	<p class="editor" id="companyText">簡單易用的點名功能，讓行動教室可快速記錄課程出缺席狀況。利用雲端App運作，不需建置硬體設施，透過QR Code 唯一碼的特性和通知家長學生未抵達的功能，來加強行動教室的安全性。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div id="panel01">
+			<div class="panel">
+					<input type="file" class="filename1" onchange="readURL(this);"/>
+					<a class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</a>
+					<a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+			</div>
+		</div>
+		<div id="panel02">
+			<div class="panel">
+					<input type="file" class="filename1" onchange="readURL(this);"/>
+					<a class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</a>
+					<a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+			</div>
+		</div>
+		<div id="panel03">
+			<div class="panel">
+					<input type="file" class="filename1" onchange="readURL(this);"/>
+					<a class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</a>
+					<a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+			</div>
+		</div>		
+		 			 
+
+		<!-- 頁尾區 -->
+
+		<div id="DOWN">
+			<p>Supported by t'mot technology C.O., LTD </p>
+		  <p>好物貼驗證網頁</p>
+		</div>
+
+	</div>
+
+<script src="jquery.notebook.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.editor').notebook({
+			autoFocus: true,
+			placeholder:'請在此輸入文字...',
+			color:'#ffffff'
+		});
+	});
+
+	function readURL(input) {
+	if (input.files && input.files[0]) {
+		console.log('jer');
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			$('#panel').css('background-image', `url(${e.target.result})`);
+		};
+		console.log('kerker');
+		reader.readAsDataURL(input.files[0]);
+	}
+}
+
+
+
+
+
+
+$(function() {
+  $('#browse1').click(function() { $('.filename1').click(); });
+	$('#browse').click(function() { $('.filename').click(); });
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>表單</title>
+</head>
+<link rel="stylesheet" href="css/form.css" />
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="js/materialize.js"></script>
+<style type="text/css">
+body {
+    font-size: 14px;
+    padding: 2em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.myclass {
+    color: red;
+    font-size: 12px;
+}
+
+.line {
+    border-bottom: 1px solid #ccc;
+    width: 90vw;
+    margin: 0px auto;
+    padding: 1em 0px;
+}
+.line00 {
+    border-top: 1px solid #ccc;
+    width: 90vw;
+    margin: 0px auto;
+    padding: 1em 0px;
+}
+#txt_001 {
+    font-size: 2em;
+    padding: 1em;
+    color: gray;
+    line-height: 1.8em;
+}
+
+.txt_002 {
+    font-size: 2em;
+    padding-top: 2em;
+    color: #333333;
+    line-height: 1.8em;
+}
+
+.txt_003 {
+    font-size: 1em;
+    padding-top: 1em;
+    color: #999;
+    line-height: 1.8em;
+}
+.txt_004{padding-bottom:15px;}
+.submit_txt{}
+.submit_btn{}
+.rate_star .glyphicon {
+    padding: .4em .1em;
+    color: #ffcc33;
+    font-size: 3em;
+    width: 1.4em;
+}
+
+</style>
+<script src="js/bootstrap-rating-input.min.js"></script>
+<!-- <script>
+$(function() {
+    $('input').on('change', function() {
+        alert("Changed: " + $(this).val())
+    });
+});
+</script> -->
+
+<body>
+    <div class="section">
+        <div class="container line">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images/logo-big_qr.svg" class="center-block img-responsive">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div id="txt_001">
+                        非常感謝您購買我們的商品，我們誠摯地邀請您對我們的產品有所指教和期望！
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 rate_star">
+                    <div class="txt_002">對本公司產品的評分： </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="number" name="your_awesome_parameter" id="rating1" class="rating" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="txt_002">
+                      你最喜歡的產品特點？
+                      <span class="txt_003">(單選)</span>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <form action="#">
+                  <p class="col-md-6">
+                    <input name="group1" type="radio" id="test1" />
+                    <label for="test1">恆溫功能</label>
+                  </p><wbr>
+                  <p class="col-md-6">
+                    <input name="group1" type="radio" id="test2" />
+                    <label for="test2">聲控功能</label>
+                  </p>
+                  <p class="col-md-6">
+                    <input name="group1" type="radio" id="test3" />
+                    <label for="test3">語音功能</label>
+                  </p>
+                  <p class="col-md-6">
+                    <input name="group1" type="radio" id="test4" />
+                    <label for="test4">外型設計</label>
+                  </p>
+                  <p class="col-md-6">
+                    <input name="group1" type="radio" id="test5" />
+                    <label for="test5">價錢親民</label>
+                  </p> 
+                  <p class="col-md-6">
+                    <input name="group1" type="radio" id="test6" />
+                    <label for="test6">軟體功能</label>
+                  </p>                                   
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="txt_002">
+                      你從哪裡得知這件商品？
+                      <span class="txt_003"> (可複選)</span>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <form>
+                  <p class="col-md-6">
+                    <input type="checkbox" id="test7" />
+                    <label for="test7">親友介紹</label>
+                  </p>
+                  <p class="col-md-6">
+                    <input type="checkbox" id="test8"/>
+                    <label for="test8">廣告曝光</label>
+                  </p>
+                  <p class="col-md-6">
+                    <input type="checkbox" id="test9"/>
+                    <label for="test9">社群網路</label>
+                  </p>
+                  <p class="col-md-6">
+                    <input type="checkbox" id="test10"/>
+                    <label for="test10">超市商場</label>
+                  </p>
+                  <p class="col-md-6">
+                    <input type="checkbox" id="test11"/>
+                    <label for="test11">超市商場</label>
+                  </p>
+                  <p class="col-md-6">
+                    <input type="checkbox" id="test12"/>
+                    <label for="test12">超市商場</label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="txt_002">對我們的產品有任何想說的話嗎？
+                        <span class="txt_003"></span>
+                    </div>
+                    <form>
+                      <div class="input-field">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">非必填...</label>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+              <form class="col s12">
+                <div class="txt_002">客戶資料
+                    <span class="txt_003"></span>
+                </div>              
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">姓名</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">手機號碼</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="row">
+                <div class="col s12 text-center">
+                    <p><br>
+  <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+                    </p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="section">
+            	<div class="container line00"></div>
+            </div>
+</body>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</html>

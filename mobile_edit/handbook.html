@@ -1,0 +1,397 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>好物貼驗證網頁</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="layout.css" rel="stylesheet" type="text/css">
+<link href="layout_m01.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/materialize.js"></script>
+
+</head>
+
+<style>
+     .chacha{
+        position: absolute;
+        display: inline-block;
+        width: 160px;
+        overflow: hidden;
+        border-radius: 50px;
+        height: 40px;
+        opacity: 0;
+        line-height: 40px;
+        text-align: center;
+        left: -100px;
+        top: -4px;
+        background-color: rgba(255, 255, 255, 0.9);
+        /*-web-kit-transition: all 0.2s ease-in-out;*/
+        /*-webkit-transition: width 0.1s, background-color 2.5s;*/
+        /*-webkit-transition-timing-function: linear;*/
+        font-size: 16px;
+        transition: .2s;
+    }
+     .mewmew{
+        position: absolute;
+        display: inline-block;
+        width: 160px;
+        overflow: hidden;
+        border-radius: 50px;
+        height: 40px;
+        opacity: 0;
+        line-height: 40px;
+        text-align: center;
+        left: 0px;
+        top: -4px;
+        background-color: rgba(255, 255, 255, 0.9);
+        /*-web-kit-transition: all 0.2s ease-in-out;*/
+        /*-webkit-transition: width 0.1s, background-color 2.5s;*/
+        /*-webkit-transition-timing-function: linear;*/
+        font-size: 16px;
+        transition: .2s;
+    }
+
+
+  li:hover > .chacha{
+        left: -110px;
+        opacity: 0.8;
+
+
+  }
+  li:hover > .mewmew{
+        left: 10px;
+        opacity: 0.8;
+
+
+  }
+    li{
+        position: relative;
+    }
+
+    a.material-icons:active, ul > li > .chacha, .mewmew {
+        opacity: 0;
+        /*display: inline;*/
+        width: 160px;
+        display: inline-block;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+</style>
+
+<body>
+
+<div id="WRAPPER">
+    <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 24px; left: 24px; width:56px;">
+        <a class="btn-floating btn-large teal">
+          <i class="material-icons">settings</i>
+        </a>
+        <ul>
+          <li>
+              <a class="btn-floating"></a>
+              <div class="mewmew btn teal lighten-2">
+                <i class="material-icons left">publish</i>發佈
+              </div> 
+          </li>
+          <li>
+              <a class="btn-floating"></a>
+              <div class="mewmew btn teal lighten-2">
+                <i class="material-icons left">cloud_upload</i>儲存
+              </div>
+          </li>
+        </ul>
+    </div>
+
+    <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 24px; right: 24px;">
+        <a class="btn-floating btn-large deep-orange">
+          <i class="material-icons">add</i>
+        </a>
+        <ul>
+          <li>
+              <a class="btn-floating"></a>
+              <div class="chacha btn deep-orange accent-2">
+                <i class="material-icons left">restaurant</i>健康食譜
+              </div> 
+          </li>
+          <li>
+              <a class="btn-floating"></a>
+              <div class="chacha btn deep-orange accent-2">
+                <i class="material-icons left">local_florist</i>植物養殖
+              </div>
+          </li>
+          <li>
+              <a class="btn-floating"></a>
+              <div class="chacha btn deep-orange accent-2">
+                <i class="material-icons left">build</i>傢俱說明書
+              </div>
+          </li>
+          <li>
+              <a class="btn-floating"></a>
+              <div class="chacha btn deep-orange accent-2">
+                <i class="material-icons left">security</i>保固功能
+              </div>
+          </li>
+        </ul>
+    </div>
+
+<!-- 頁首區 -->
+
+<div id="BANNER">
+    <h1 class="text1">
+        <div class="editor" id="companyProduct">填入公司產品名稱
+        </div>
+    </h1>
+    <h2 class="text2">識別碼:7896940</h2>
+    <h2 class="text2">掃碼數:0000001</h2>
+    <h2 class="text2">感謝您的查詢</h2>
+    <div id="gg88">
+        <div style="flex:3"></div>
+        <h2 class="text2">
+          <div class="editor" id="companyName" style="flex: 4">填入公司名稱</div>
+        </h2>
+        <div style="flex:3"></div>
+    </div>
+</div>
+
+<!-- 主選單區 -->
+
+
+<!-- 第一內容區 -->
+
+<div id="CONTENT-1">
+    <div class="kerker">
+        <div id="panel_m01">
+            <div class="panel">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <a class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</a>
+                    <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+            </div>
+        </div>
+        <div class="WORD">
+            <div class="editor" id="companyName" style="margin:10px">
+            	<h1>Egg Benedict 班尼迪克蛋</h1>
+                <h2>材料</h2>
+                <ul>
+                <li>雞蛋2個</li>
+                <li>蛋黃2個</li>
+                <li>無鹽奶油150g</li>
+                <li>檸檬汁30cc</li>
+                <li>鹽少許</li>
+                <li>黑胡椒少許</li>
+                <li>燻鮭魚2片</li>
+                <li>英式瑪芬或圓形法國麵包1個</li>
+                </ul>
+            </div>
+        </div>
+  </div>	
+</div>
+
+<!-- 第二內容區 -->
+
+<div id="CONTENT-2">
+    <div id="textpanel">
+    	<div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟1</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">水波蛋 雞蛋分別打入碗中 鍋內水微滾，加入適量白醋，拿湯匙在水中劃圈圈，趁水在旋轉時，將碗中的蛋順勢輕輕滑入水中 等蛋白稍微凝結成形，即可撈起備用。</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step1.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+
+        <div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟2</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">荷蘭醬 準備一個大碗，將蛋黃打入，加上檸檬汁。</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step2.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+	
+        <div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟3</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">以隔水加熱的方式，一邊攪拌，一邊慢慢加入溶化的奶油，持續不停地攪拌至濃稠狀，加鹽、黑胡椒調味。</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step3.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div>
+<div id="CONTENT-2">
+    <div id="textpanel">
+        <div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟4</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">麵包烤至酥香，擦上奶油，鋪上煙燻鮭魚片、水波蛋，淋上荷蘭醬。</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step4.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+
+        <div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟5</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">同場加映 蘿蔓生菜切絲洗淨後，將水份充分瀝乾，才能保有生菜的爽脆度。</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step5.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+    
+        <div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟6</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">加上小蕃茄、紫高麗菜、小黃瓜、酪梨、麵包丁、培根丁 取一小碗，倒入四大匙初榨橄欖油、適量巴薩米克醋、1/2小匙法式芥末醬、檸檬汁少許、鹽、黑胡椒少許，義式綜合香料適量，混合調匀淋上沙拉。</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step6.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div>
+<div id="CONTENT-2">
+    <div id="textpanel">
+        <div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟7</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">不需費太多心力，就可以坐下來好好享受豐盛的週末早午餐！</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step7.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+
+        <div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟8</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">您的文字敘述。</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step7.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+    
+        <div class="BOX">
+            <div class="panel">
+                <a class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</a>
+                <h3><div class="editor" id="companyText">步驟9</div></h3>
+                <div class="word">  
+                    <p class="editor" id="productText">您的文字敘述。</p>
+                </div>
+                <div class="panel01_m01">
+                    <input type="file" class="filename1" onchange="readURL(this);"/>
+                    <span class="waves-effect waves-light btn amber darken-3" value="換張圖吧" id="browse1"><i class="material-icons left">image</i>圖片</span>
+                    <span class="waves-effect waves-light btn amber darken-3" value="刪除此圖" id="browse" ><i class="material-icons left">clear</i>刪除</span>
+                    <img src="images/step7.jpg" class="step_img"> 
+                </div>                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 頁尾區 -->
+
+<div id="DOWN">
+	<p>Supported by t'mot technology C.O., LTD </p>
+    <p>好物貼驗證網頁</p>	
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="flycan.js"></script>
+<script src="jquery.notebook.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.editor').notebook({
+            autoFocus: true,
+            placeholder:'請在此輸入文字...',
+            color:'#ffffff'
+        });
+    });
+
+    function readURL(input) {
+    if (input.files && input.files[0]) {
+        console.log('jer');
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('#panel').css('background-image', `url(${e.target.result})`);
+        };
+        console.log('kerker');
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+
+
+
+
+$(function() {
+  $('#browse1').click(function() { $('.filename1').click(); });
+    $('#browse').click(function() { $('.filename').click(); });
+
+});
+
+</script>
+</body>
+</html>
