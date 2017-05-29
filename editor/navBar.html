@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bootstrap Starter Template</title>
+
+  <!-- Bootstrap -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="simple-scrollbar.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="survey.scss">
+  <link rel="stylesheet" href="tmot_navbar.scss">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+
+</style>
+<script>
+
+
+</script>
+
+
+<body>
+
+  <div class="tmotNavbar" id="tmotNav">
+    <div class="tmotnavbar-container">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+  <div class="tmotContainer">
+    <div class="tmot_title">
+      <div class="quiz_num">1.</div>
+      <div class="quiz_title">你現在是一場棒球比賽中的打擊者，正站在打擊區準備打擊。現在一顆直球投過來了，你直覺自己的表現是？<div class="form_tag single">單選</div><div class="form_tag multi">複選</div><div class="form_tag required">必填</div></div>
+      <div class="form_quiz_img"></div>
+      
+    </div>
+    <div class="form_item_g02">
+      <button class="form_button"><span class="icon_checkbox01"></span>高國揮棒落空</button>
+      <button class="form_button active"><span class="icon_checkbox01"></span>5K戰士大師兄</button>
+      <button class="form_button"><span class="icon_checkbox01"></span>高國亂揮</button>
+      <button class="form_button"><span class="icon_checkbox01"></span>鍋貼吃到飽</button>
+      <div class="bt_img">
+        <div class="button_img active">
+          <div class="mask"></div>
+          <div class="check"></div>
+        </div>
+        <div class="img_text">000010010010010010010011</div>
+      </div>
+      <div class="bt_img">
+        <div class="button_img">
+          <div class="mask"></div>
+          <div class="check"></div>
+        </div>
+        <div class="img_text">000010010010010010010011</div>
+      </div>
+      <div class="bt_img">
+        <div class="button_img">
+          <div class="mask"></div>
+          <div class="check"></div>
+        </div>
+        <div class="img_text">000010010010010010010011</div>
+      </div>
+      <div class="bt_img">
+        <div class="button_img">
+          <div class="mask"></div>
+          <div class="check"></div>
+        </div>
+        <div class="img_text">000010010010010010010011</div>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+  <div class="tab_bottom col-12">
+    <button class="disabled col-md-4 col-sm-6 col-xs-6 pull-left">&#10094; 上一題</button>
+    <button class="active col-md-4 col-sm-6 col-xs-6 pull-right">下一題 &#10095;</button>
+    <button class="col-md-4 col-sm-6 col-xs-6">&#10094; 上一題</button>
+  </div>
+  
+
+  <script>
+
+    function myFunction() {
+      var x = document.getElementById("tmotNav");
+      if (x.className === "tmotNavbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "tmotNavbar";
+      }
+    }
+  </script>
+</body>
+
+</html>

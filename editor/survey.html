@@ -1,0 +1,751 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>t,mot Editor</title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="slidebars.css">
+  <link rel="stylesheet" href="simple-scrollbar.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="survey.scss">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <!-- Container START -->
+  <div canvas="container">
+    <!-- NAVGATION BAR START -->
+    <nav class="navbar sample bg-faded">
+      <!-- slider menu START -->
+      <button class="js-toggle-left-slidebar c-hamburger c-hamburger--htra"> <span>toggle menu</span> </button>
+      <!-- slider menu END -->
+      <!-- tmot LOGO START-->
+      <div class="inline">
+        <a class="navbar-brand nav-tmotlogo" href="#"> <img src="img/logo_tmot.svg" height="23" alt="t,mot innovation Lab"> </a>
+      </div>
+      <!-- tmot LOGO END -->
+      <!-- User icon START -->
+      <div class="pull-right inline">
+        <a class="js-toggle-right-slidebar icon_user"> <img src="img/icon_account.svg" alt="t,mot innovation Lab"> </a>
+      </div>
+      <!-- user icon END -->
+    </nav>
+    <!-- NAVGATION BAR END -->
+    <!-- Editor START -->
+    <div class="editorBG">
+      <!-- left tool START -->
+      <div class="editorTool" ss-container>
+        <div class="tool_icon"> <img src="img/icon_check.svg" class="image">
+          <div class="overlay">
+            <div class="text">Select</div>
+          </div>
+        </div>
+        <div class="tool_icon"> <img src="img/icon_textfield.svg" class="image">
+          <div class="overlay">
+            <div class="text">Essay</div>
+          </div>
+        </div>
+        <div class="tool_icon"> <img src="img/icon_rate.svg" class="image">
+          <div class="overlay">
+            <div class="text">Rating</div>
+          </div>
+        </div>
+        <!-- non-Beta version
+        <div class="tool_icon"> <img src="img/icon_date.svg" class="image">
+          <div class="overlay">
+            <div class="text">Date</div>
+          </div>
+        </div>
+        <div class="tool_icon"> <img src="img/icon_attachment.svg" class="image">
+          <div class="overlay">
+            <div class="text">Attach</div>
+          </div>
+        </div>
+        <div class="tool_icon"> <img src="img/icon_product.svg" class="image">
+          <div class="overlay">
+            <div class="text">Shop</div>
+          </div>
+        </div>
+        <div class="tool_icon"> <img src="img/icon_userInfo.svg" class="image">
+          <div class="overlay">
+            <div class="text">Client</div>
+          </div>
+        </div>
+        -->
+      </div>
+      <!-- left tool END -->
+      <!-- center editorPlace START -->
+      <div class="editorPlace left-pos" id="slider">
+        <div class="pp">
+          <!-- center top area START-->
+          <div style="width:100%;position: absolute;">
+            <!-- expand/collapse button START -->
+            <div class="pull-right">
+              <input id="toggle" class="switch" type="checkbox" checked>
+              <label id="XD" for="toggle" class="switch" onclick="toggle_position('slider');"> </label>
+            </div>
+            <!-- expand/collapse button END -->
+            <!-- page tab START -->
+            <ul class="page_tab nav nav-tabs">
+              <li>
+                <a data-toggle="tab" href="#page01">
+				  1. 歡迎頁面
+				</a>
+
+              </li>
+              <li> <a data-toggle="tab" href="#page02">
+				  2. 問卷題目
+
+				</a>
+              </li>
+              <li class="active"> <a data-toggle="tab" href="#page03">
+				  3. 感謝頁面
+                  <span class="lock">
+                      <img src="img/icon_lock.svg" width="12px">
+                  </span>
+				</a>
+              </li>
+              <li> <a data-toggle="tab" href="#page04">
+				  4. 過期頁面
+                  <span class="lock">
+                      <img src="img/icon_lock.svg" width="12px">
+                  </span>
+				</a>
+              </li>
+            </ul>
+            <!-- page tab END -->
+          </div>
+          <!-- center top area END -->
+          <!-- center content START -->
+          <div class="artBG tab-content">
+            <!-- PAGE04 START -->
+            <div id="page04" class="page_artboard tab-pane fade in" ss-container>
+                            <div class="page_block">
+                <div class="bblock">
+                <div>
+                  <a class="lock_icon"> <i class="fa fa-lock" aria-hidden="true"></i> </a>
+                </div>
+                <!-- contentBlock START -->
+                <div class="contentBlock">
+                  <div class="bg_badge02">
+                    <div class="img_badge02"></div>
+                  </div>
+                  <div class="form_welcome_title">
+                    此問卷已關閉
+                  </div>
+                  <div class="form_title02">想要輕鬆製作您的專屬問卷？立即註冊免費建立線上問卷！
+                  </div>
+                  <div class="form_g">
+                    <input placeholder="手機號碼" class="form_register01" >
+                    <div class="form_group01">
+                      <input placeholder="驗證碼" class="form_register02" >
+                      <button class="form_bt04">  
+                        <span class="textFooter">取得驗證碼</span> 
+                      </button>
+                    </div>
+                    <input placeholder="新增密碼" class="form_register01" >
+                    <button class="form_bt05">  
+                        <span class="textFooter">免費試用</span> 
+                    </button>
+                  </div>
+                  <div class="form_footer">
+                    t,mot platform
+                  </div>
+                </div>
+                <!-- contentBlock END -->
+                </div>
+              </div>
+            </div>
+            <!-- PAGE04 END -->
+            <!-- PAGE03 START -->
+            <div id="page03" class="page_artboard tab-pane fade in active" ss-container>
+              <div class="page_block">
+                <div class="bblock">
+                <div>
+                  <a class="lock_icon"> <i class="fa fa-lock" aria-hidden="true"></i> </a>
+                </div>
+                <!-- contentBlock START -->
+                <div class="contentBlock">
+                  <div class="bg_badge01">
+                    <div class="img_badge01"></div>
+                  </div>
+                  <div class="form_welcome_title">
+                    恭喜您完成問卷
+                  </div>
+                  <div class="form_title02">想要輕鬆製作您的專屬問卷？立即註冊免費建立線上問卷！
+                  </div>
+                  <div class="form_g">
+                    <input placeholder="手機號碼" class="form_register01" >
+                    <div class="form_group01">
+                      <input placeholder="驗證碼" class="form_register02" >
+                      <button class="form_bt04">  
+                        <span class="textFooter">取得驗證碼</span> 
+                      </button>
+                    </div>
+                    <input placeholder="新增密碼" class="form_register01" >
+                    <button class="form_bt05">  
+                        <span class="textFooter">免費試用</span> 
+                    </button>
+                  </div>
+                  <div class="form_footer">
+                    t,mot platform
+                  </div>
+                </div>
+                <!-- contentBlock END -->
+                </div>
+              </div>
+            </div>
+            <!-- PAGE03 END -->
+            <!-- PAGE02 START -->
+            <div id="page02" class="page_artboard tab-pane fade in" ss-container>
+              <!-- page launch block START -->
+              <div class="page_block">
+                <div class="launch_text">
+                  <!-- contentBlock START -->
+                  <div class="contentBlock">
+                    <img src="img/icon_arrowL.svg" class="img_arrow">
+                    <div class="text_launch"> <span class="textL">請開始建立您的問卷題目</span> </div>
+                  </div>
+                  <!-- contentBlock END -->
+                </div>
+              </div>
+              <!-- page launch block END -->
+              <!-- select block START -->
+              <div class="page_block">
+                <div class="bblock">
+                  <!-- title/text toolbar START -->
+                  <div>
+                    <a class="remove_icon"> <i class="glyphicon glyphicon-remove"></i> </a>
+                  </div>
+                  <div class="toolbar_BG">
+                    <a class="toolbar_bt fSelect">
+                      <span>單選</span>
+                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                    <a class="toolbar_bt fRequire">
+                      <span>必填</span>
+                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="toolbar_bt"> <i class="fa fa-picture-o" aria-hidden="true"></i> </a>
+                    <a class="toolbar_bt fVideo"> <i class="fa fa-youtube-play" aria-hidden="true"></i> </a>
+                    <!--<a class="toolbar_bt"> <i class="fa fa-file-text-o" aria-hidden="true"></i> </a>-->
+
+                    <!-- <a class="icon_move"><img src="img/icon_move.svg" width="20px"></a> -->
+
+
+                    <div class="formSelect">
+                      <ul class="subtool">
+                        <li class="event">單選</li>
+                        <li class="event">多選</li>
+
+                      </ul>
+                    </div>
+                    <div class="formRequire">
+                      <ul class="subtool">
+                        <li class="event">必填</li>
+                        <li class="event">非必填</li>
+                      </ul>
+                    </div>
+                    <div class="formVideo">
+
+                      <div class="subtool_video">Youtube Link: <br>
+                        <input value="http://" class="w100">
+                      </div>
+                      <a class="form_bt03">
+                          確認
+                      </a>
+                    </div>
+
+                  </div>
+                  <!-- title/text toolbar END -->
+                  <!-- contentBlock START -->
+                  <div class="contentBlock">
+                    <div class="form_frame">
+                      <div class="form_quiz">
+                        <div class="form_number">1.</div>
+                        <div class="item_text01" contenteditable="true">選單題型</div>
+                        <!--新增圖片會產生的DIV-->
+                        <div class="form_quiz_img"></div>
+                      </div>
+                      <div class="form_item">
+                        <form>
+                          <div class="item_group">
+                            <input class="tmot_checkbox" type="radio" name="item" value="item01">
+                            <div class="item_text02" contenteditable="true">select001</div>
+                            <!--新增圖片會產生的DIV-->
+                            <div class="form_quiz_img"></div>
+                          </div>
+                          <div class="item_edit">
+                            <a class="item_icon photo"></a>
+                            <a class="item_icon move"></a>
+                            <a class="item_icon delete"></a>
+                          </div>
+                          <br>
+                          <div class="item_group">
+                            <input class="tmot_checkbox" type="radio" name="item" value="item02">
+                            <div class="item_text02" contenteditable="true">select002</div>
+                          </div>
+                          <div class="item_edit">
+                            <a class="item_icon photo"></a>
+                            <a class="item_icon move"></a>
+                            <a class="item_icon delete"></a>
+                          </div>
+
+                          <br>
+                          <div class="item_group">
+                            <input class="tmot_checkbox" type="radio" name="item" value="item03">
+                            <div class="item_text02" contenteditable="true">select003</div>
+                          </div>
+                          <div class="item_edit">
+                            <a class="item_icon photo"></a>
+                            <a class="item_icon move"></a>
+                            <a class="item_icon delete"></a>
+                          </div>
+                        </form>
+                        <a class="form_bt02 btn-lg">
+                          <i class="glyphicon glyphicon-plus-sign"></i> 添加選項
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- contentBlock END -->
+                </div>
+              </div>
+              <!-- select block END -->
+              <!-- textfield block START -->
+              <div class="page_block">
+                <div class="bblock">
+                  <!-- title/text toolbar START -->
+                  <div>
+                    <a class="remove_icon"> <i class="glyphicon glyphicon-remove"></i> </a>
+                  </div>
+                  <div class="toolbar_BG">
+                    <a class="toolbar_bt fRoww01">
+                      <span>行數</span>
+                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                    <a class="toolbar_bt fRoww02">
+                      <span>必填</span>
+                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="toolbar_bt"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                    <a class="toolbar_bt"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <!--<a class="toolbar_bt"> <i class="fa fa-file-text-o" aria-hidden="true"></i> </a>-->
+
+                    <!-- <a class="icon_move"><img src="img/icon_move.svg" width="20px"></a> -->
+
+                    <div class="formRoww01">
+                      <ul class="subtool">
+                        <li class="event">2行</li>
+                        <li class="event">4行</li>
+                        <li class="event">8行</li>
+                      </ul>
+                    </div>
+                    <div class="formRoww02">
+                      <ul class="subtool">
+                        <li class="event">必填</li>
+                        <li class="event">非必填</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <!-- title/text toolbar END -->
+                  <!-- contentBlock START -->
+                  <div class="contentBlock">
+                    <div class="form_frame">
+                      <div class="form_quiz">
+                        <div class="form_number">2.</div>
+                        <div class="item_text01" contenteditable="true">問答題型</div>
+                        <!--新增圖片會產生的DIV-->
+                        <div class="form_quiz_img"></div>
+                      </div>
+                      <div class="form_item">
+
+                        <textarea cols="50" class="tmot_textarea">解答</textarea>
+
+                        <div class="note_text01">&#8251; 此類型是開放式答題，因此不會有數據分析報告。</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- contentBlock END -->
+                </div>
+              </div>
+              <!-- textfield block END -->
+              <!-- star rating block START -->
+              <div class="page_block">
+                <div class="bblock">
+                  <!-- title/text toolbar START -->
+                  <div>
+                    <a class="remove_icon"> <i class="glyphicon glyphicon-remove"></i> </a>
+                  </div>
+                  <div class="toolbar_BG">
+                    <a class="toolbar_bt fRoww02">
+                      <span>必填</span>
+                      <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="toolbar_bt"> <i class="fa fa-picture-o" aria-hidden="true"></i> </a>
+                    <a class="toolbar_bt"> <i class="fa fa-youtube-play" aria-hidden="true"></i> </a>
+                    <!--<a class="toolbar_bt"> <i class="fa fa-file-text-o" aria-hidden="true"></i> </a>-->
+
+                    <!-- <a class="icon_move"><img src="img/icon_move.svg" width="20px"></a> -->
+
+                    <div class="formRoww02">
+                      <ul class="subtool">
+                        <li class="event">必填</li>
+                        <li class="event">非必填</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <!-- title/text toolbar END -->
+                  <!-- contentBlock START -->
+                  <div class="contentBlock">
+                    <div class="form_frame">
+                      <div class="form_quiz">
+                        <div class="form_number">3.</div>
+                        <div class="item_text01" contenteditable="true">評分題型</div>
+                        <!--新增圖片會產生的DIV-->
+                        <div class="form_quiz_img"></div>
+                      </div>
+                      <div class="form_item">
+                        <div class="rating">
+                          <span>☆</span>
+                          <span>☆</span>
+                          <span>☆</span>
+                          <span>☆</span>
+                          <span>☆</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- contentBlock END -->
+                </div>
+              </div>
+              <!-- star rating block END -->
+            </div>
+            <!-- PAGE02 END -->
+            <!-- PAGE01 START -->
+            <div id="page01" class="page_artboard tab-pane fade in" ss-container>
+
+              <!-- form launch block START -->
+              <div class="page_block">
+                <div class="launch_text">
+                  <!-- contentBlock START -->
+                  <div class="contentBlock">
+                    <div class="text_launch_right">
+                      <span class="textR">請先填寫問卷的基本設定</span>
+                      <img src="img/icon_arrowR.svg" class="img_arrow_right">
+                    </div>
+                  </div>
+                  <!-- contentBlock END -->
+                </div>
+              </div>
+              <!-- form launch block END -->
+
+              <!-- welcome bg block START -->
+              <div class="page_block">
+                <div class="form_welcome">
+                </div>
+              </div>
+              <!-- welcome bg block END -->
+              <!-- welcome title block START -->
+              <div class="page_block">
+                <div class="form_welcome_title">
+                  無標題問卷 Untitle Questionaire
+                </div>
+              </div>
+              <!-- welcome title block END -->
+              <!-- welcome description block START -->
+              <div class="page_block">
+                <div class="form_welcome_text">
+                  謝謝你今日造訪我們的店面，花費你一點時間，可以幫助我們提供更完善的服務！ Thank you for your pacience.
+                </div>
+              </div>
+              <!-- welcome description block END -->
+              <!-- welcome button block START -->
+              <div class="page_block">
+                <div class="form_welcome_button">
+
+                  <a class="form_bt01">開始設計題目
+                <img src="img/icon_start.svg" class="iconStart">
+                </a>
+                </div>
+              </div>
+              <!-- welcome button block END -->
+            </div>
+            <!-- PAGE01 END -->
+
+          </div>
+        </div>
+      </div>
+      <!-- center editorPlace END -->
+      <!-- right control panel START -->
+      <div class="editorControl" id="XXD">
+        <div>
+          <!-- control tab START -->
+          <div class="controlNav">
+            <ul class="nav nav-tabs control_tab">
+              <li class="bt active">
+                <a data-toggle="tab" href="#basic" class="easing">
+                  <div class="bt_icon">
+                    <svg id="iconBasic" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <title> icon_basic_00 </title>
+                      <g fill-rule="evenodd">
+                        <path d="M8.333 4.654H23v1.154H8.333zM1 4.654h6.11v1.154H1zM20.556 11.423H23v1.154h-2.444zM1 11.423h15.89v1.154H1zM1 18.192h9.778v1.154H1zM13.222 18.192H23v1.154h-9.778z"
+                        />
+                        <path d="M4.667 3.5H7.11v3.462H4.668zM16.89 10.27h2.443v3.46H16.89zM9.556 17.038H12V20.5H9.556z" /> </g>
+                    </svg>
+                  </div>
+                  <div class="bt_icon"> 基本 </div>
+                </a>
+              </li>
+              <li class="bt">
+                <a data-toggle="tab" href="#style">
+                  <div class="bt_icon">
+                    <svg id="iconStyle" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <title> icon_style_00 </title>
+                      <g fill-rule="evenodd">
+                        <path d="M11.078 1.5l.422 21c-1.225-.01-2.466-.247-3.666-.737-5.23-2.13-7.717-8.24-5.553-13.64C3.823 4.272 7.31 1.82 11.08 1.5zM5.226 9.078c.79.322 1.687-.056 2.003-.845.314-.788-.07-1.688-.86-2.01-.79-.322-1.687.056-2.002.844-.316.788.068 1.69.858 2.01zm-2.2 3.98c.647.264 1.38-.042 1.636-.682s-.06-1.373-.706-1.637c-.646-.264-1.378.04-1.635.682-.256.64.06 1.373.707 1.637zm2.46 5.57c.79.32 1.687-.057 2.003-.845.315-.788-.07-1.688-.86-2.01-.79-.322-1.687.056-2.002.844-.316.788.07 1.688.86 2.01zm2.89-4.946c.79.322 1.685-.056 2-.844.317-.79-.068-1.69-.858-2.01-.79-.323-1.686.055-2.002.843-.316.79.07 1.69.86 2.012zm-.342-8.026c.323.132.69-.02.817-.342.13-.32-.028-.686-.352-.818-.323-.132-.69.02-.817.34-.127.322.03.688.354.82zm1.338 12.548c.323.132.69-.02.817-.34s-.03-.688-.354-.82c-.323-.13-.69.022-.817.342-.13.32.028.687.352.818zm-3.35-4.734c.255.104.544-.02.647-.276.1-.256-.022-.548-.276-.652-.253-.103-.543.02-.645.277-.104.255.02.547.273.65z"
+                        />
+                        <path d="M21.324 15.937c2.078-5.144-.308-10.954-5.322-12.98-.968-.39-1.977-.62-3-.682l.405 19.91c3.49-.487 6.538-2.836 7.917-6.248zm-8.405 6.805l-.427-20.985c1.235.01 2.486.247 3.696.736 5.272 2.13 7.778 8.234 5.597 13.632-1.554 3.846-5.07 6.297-8.868 6.617z"
+                          fill-rule="nonzero" />
+                        <path fill-rule="nonzero" d="M17.644 3.408l-4.997 4.576.337.37 4.998-4.577M20.02 5.647l-6.928 6.225.334.372 6.927-6.225M22.03 8.648l-9.262 7.77.322.384 9.262-7.77M22.02 12.647l-9.373 8.332.332.373 9.373-8.332"
+                        /> </g>
+                    </svg>
+                  </div>
+                  <div class="bt_icon"> 樣式 </div>
+                </a>
+              </li>
+              <li class="bt">
+                <a data-toggle="tab" href="#back">
+                  <div class="bt_icon">
+                    <svg id="iconBG" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <title> icon_bg_00 </title>
+                      <path d="M20.333 17.837V6.163 7H17V3.667h.837H6.163 7V7H3.667v-.837 11.674V17H7v3.333h-.837 11.674H17V17h3.333v.837zM3 4.504C3 3.674 3.673 3 4.504 3h14.992C20.326 3 21 3.673 21 4.504v14.992c0 .83-.673 1.504-1.504 1.504H4.504C3.674 21 3 20.327 3 19.496V4.504zm7.333-.837h3.334V7h-3.334V3.667zm0 6.666h3.334v3.334h-3.334v-3.334zm-6.666 0H7v3.334H3.667v-3.334zm13.333 0h3.333v3.334H17v-3.334zM10.333 17h3.334v3.333h-3.334V17zm3.334-10H17v3.333h-3.333V7zM7 7h3.333v3.333H7V7zm6.667 6.667H17V17h-3.333v-3.333zm-6.667 0h3.333V17H7v-3.333z"
+                        fill-rule="nonzero" /> </svg>
+                  </div>
+                  <div class="bt_icon"> 背景 </div>
+                </a>
+              </li>
+              <li class="bt">
+                <a data-toggle="tab" href="#phone">
+                  <div class="bt_icon">
+                    <svg id="iconPhone" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <title> icon_phone_00 </title>
+                      <path d="M5 2.002C5 1.45 5.45 1 6.007 1h11.986C18.55 1 19 1.44 19 2.002v19.996C19 22.55 18.55 23 17.993 23H6.007C5.45 23 5 22.56 5 21.998V2.002zM6 2v17h12V2H6zm6 20c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1z"
+                        fill-rule="evenodd" /> </svg>
+                  </div>
+                  <div class="bt_icon"> 手機預覽 </div>
+                </a>
+              </li>
+              <li class="more">
+                <a href="#">
+                  <div class="bt_icon" style="margin-top: 10px;">
+                    <svg id="iconMore" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <title> icon_more_00 </title>
+                      <g transform="translate(6 11)" fill-rule="evenodd">
+                        <rect width="2" height="2" rx="1" />
+                        <rect x="5" width="2" height="2" rx="1" />
+                        <rect x="10" width="2" height="2" rx="1" /> </g>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- control tab END -->
+          <!-- control content START -->
+          <div class="controlBG tab-content">
+            <div class="controlArtboard">
+              <div id="phone" class="tab-pane fade phone_view">
+                <div class="preview_frame"> </div>
+              </div>
+              <div id="back" class="tab-pane fade"> mfldmv,x.vcxm </div>
+              <div id="style" class="tab-pane fade"> ejfowejfwepf </div>
+              <div id="basic" class="tab-pane fade in setting_view active">
+                <div class="title_setting">基本設定</div>
+                <form class="setting_form">
+                  <div>
+                    <a href="#" class="cc_popover" title="我該怎麼命名問卷名稱呢？" data-toggle="popover" data-trigger="focus" data-content="問卷名稱是代表此問卷的主題，當您發送此份問卷的時候大家會先看到這個問卷名稱，一開始的歡迎頁面也會用一樣的標題。">
+                      <span class="input_title">
+                      問卷名稱
+                    </span> <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    </a>
+                    <br>
+                    <input class="setting_input" type="text" name="PageName" value="" placeholder="無標題問卷">
+                    <div class="space_div_form"></div>
+                  </div>
+                  <div>
+                    <a href="#" class="cc_popover" title="描述是什麼？" data-toggle="popover" data-trigger="focus" data-content="此處是針對填寫問卷者需要先於歡迎頁面閱讀的內容。">
+                      <span class="input_title">
+                      描述
+                    </span> <i class="fa fa-question-circle" aria-hidden="true"></i> </a>
+                    <br>
+                    <textarea rows="2" cols="50" class="setting_input" type="text" name="PageDes" value="" placeholder="感謝您今日造訪我們的店面，只需要花費您一點時間，可以幫助我們提供更完善的服務！"></textarea>
+
+                  </div>
+                  <div>
+                    <a href="#" class="cc_popover" title="問卷標籤是什麼？" data-toggle="popover" data-trigger="focus" data-content="問卷標籤是針對頁面內容填寫適當的描述，有助於網頁搜尋分類。">
+                      <span class="input_title">
+                      問卷標籤
+                    </span> <i class="fa fa-question-circle" aria-hidden="true"></i> </a>
+                    <br>
+                    <textarea rows="2" cols="50" class="setting_input" type="text" name="PageDes" value="" placeholder="標籤分類（例如：咖啡豆，咖啡杯，沖泡咖啡方法，咖啡種類...）"></textarea>
+
+                  </div>
+                  <div>
+                    <a href="#" class="cc_popover" title="我該上傳什麼縮圖呢？" data-toggle="popover" data-trigger="focus" data-content="這裡的縮圖將會用於您分享此頁面時，大家會先預覽到的logo或者小圖預覽喔！">
+                      <span class="input_title">
+                      上傳縮圖
+                    </span> <i class="fa fa-question-circle" aria-hidden="true"></i> </a>
+                    <br>
+                    <div class="bg_thumbnail">
+                      <div class="img_thumbnail">
+                        <div class="text_thumbnail">(縮圖預覽)
+                        </div>
+                      </div>
+                    </div>
+                    <a class="bt_selectfile01">
+                      選擇檔案
+                    </a>
+                    <div class="space_div"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- control content END -->
+          <!-- control footer START -->
+          <div class="controlFooter">
+            <button class="footerBt"> <img src="img/icon_undo.svg" class="iconFooter"> <span class="textFooter">Undo</span> </button>
+            <button class="footerBt"> <img src="img/icon_redo.svg" class="iconFooter"> <span class="textFooter">Redo</span> </button>
+            <button class="footerBt"> <img src="img/icon_save.svg" class="iconFooter"> <span class="textFooter">Save</span> </button>
+            <button class="footerBtO"> <img src="img/icon_ok.svg" class="iconFooter"> <span class="textFooter">Complete</span> </button>
+          </div>
+          <!-- control footer END -->
+        </div>
+      </div>
+      <!-- right control panel END -->
+    </div>
+    <!-- Editor END -->
+  </div>
+  <!-- Container START -->
+  <!--slidebar START-->
+  <div off-canvas="slidebar-1 left reveal">
+    <p>這裡給你放產品線</p>
+  </div>
+  <div off-canvas="slidebar-2 right shift">
+    <p>這裡給你放使用者訊息</p>
+  </div>
+  <!--script END-->
+  <script>
+    /* PopOver START*/
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+    /* Popover END*/
+    /* EditorPlace CSS Slider -- START */
+    function toggle_position(elem_name) {
+      var elem = document.getElementById(elem_name);
+      if (elem.classList.contains("left-pos")) {
+        elem.classList.remove("left-pos");
+        elem.classList.add("right-pos");
+        document.getElementById("XXD").style.zIndex = "-1";
+      } else {
+        elem.classList.remove("right-pos");
+        elem.classList.add("left-pos");
+        setTimeout(function () {
+          document.getElementById("XXD").style.zIndex = "0";
+        }, 400);
+      }
+    }
+    /* EditorPlace CSS Slider -- END */
+    $(document).ready(function () {
+      $(".tWidth").click(function () {
+        $(".textwidth").fadeToggle(200);
+      });
+    });
+    $(document).ready(function () {
+      $(".tSize").click(function () {
+        $(".toolbar_view").fadeToggle(200);
+      });
+    });
+    $(document).ready(function () {
+      $(".tColor").click(function () {
+        $(".textcolor").fadeToggle(200);
+      });
+    });
+    $(document).ready(function () {
+      $(".fSelect").click(function () {
+        $(".formSelect").fadeToggle(200);
+      });
+    });
+    $(document).ready(function () {
+      $(".fRequire").click(function () {
+        $(".formRequire").fadeToggle(200);
+      });
+    });
+    $(document).ready(function () {
+      $(".fRoww01").click(function () {
+        $(".formRoww01").fadeToggle(200);
+      });
+    });
+    $(document).ready(function () {
+      $(".fRoww02").click(function () {
+        $(".formRoww02").fadeToggle(200);
+      });
+    });
+    $(document).ready(function () {
+      $(".fVideo").click(function () {
+        $(".formVideo").fadeToggle(200);
+      });
+    });
+    /* Replace all SVG images with inline SVG -- START */
+    jQuery('img.svg').each(function () {
+      var $img = jQuery(this);
+      var imgID = $img.attr('id');
+      var imgClass = $img.attr('class');
+      var imgURL = $img.attr('src');
+      jQuery.get(imgURL, function (data) {
+        // Get the SVG tag, ignore the rest
+        var $svg = jQuery(data).find('svg');
+        // Add replaced image's ID to the new SVG
+        if (typeof imgID !== 'undefined') {
+          $svg = $svg.attr('id', imgID);
+        }
+        // Add replaced image's classes to the new SVG
+        if (typeof imgClass !== 'undefined') {
+          $svg = $svg.attr('class', imgClass + ' replaced-svg');
+        }
+        // Remove any invalid XML tags as per http://validator.w3.org
+        $svg = $svg.removeAttr('xmlns:a');
+        // Replace image with new SVG
+        $img.replaceWith($svg);
+      }, 'xml');
+    });
+    /* Replace all SVG images with inline SVG -- END */
+  </script>
+  <script src="http://buzinas.github.io/simple-scrollbar/simple-scrollbar.min.js"></script>
+  <script src="slidebars.js"></script>
+  <!--[if IE 9]><script src="classList.min.js"></script><![endif]-->
+  <script src="simple-scrollbar.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
