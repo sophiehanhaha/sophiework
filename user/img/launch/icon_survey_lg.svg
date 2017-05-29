@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="50px" viewBox="0 0 54 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>launch/icon_survey_lg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="13" y="15" width="14" height="14" rx="7"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="13" y="32.5" width="14" height="14" rx="7"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="13" y="50" width="14" height="14" rx="7"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="launch-頁面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Launch" transform="translate(-875.000000, -551.000000)">
+            <g id="icon_survey" transform="translate(862.000000, 536.687293)">
+                <g id="Group-3">
+                    <rect id="Rectangle-5" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="80" height="80"></rect>
+                    <rect id="Rectangle-7" fill="#38434F" x="32.6406494" y="18" width="33.707913" height="3"></rect>
+                    <rect id="Rectangle-7" fill="#38434F" x="32.6406494" y="24" width="20.9256354" height="3"></rect>
+                    <rect id="Rectangle-7" fill="#38434F" x="32.6406494" y="35" width="33.707913" height="3"></rect>
+                    <rect id="Rectangle-7" fill="#38434F" x="32.6406494" y="41" width="20.9256354" height="3"></rect>
+                    <rect id="Rectangle-7" fill="#38434F" x="32.6406494" y="52" width="33.707913" height="3"></rect>
+                    <rect id="Rectangle-7" fill="#38434F" x="32.6406494" y="58" width="20.9256354" height="3"></rect>
+                    <use id="Rectangle-6" stroke="#38434F" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    <use id="Rectangle-6" stroke="#38434F" mask="url(#mask-4)" stroke-width="4" xlink:href="#path-3"></use>
+                    <use id="Rectangle-6" stroke="#38434F" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-5"></use>
+                    <rect id="Rectangle-6" fill="#38434F" x="17" y="19" width="6" height="6" rx="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

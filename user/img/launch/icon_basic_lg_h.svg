@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="55px" viewBox="0 0 58 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>launch/icon_basic_lg_h</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="12" y="14" width="56" height="10" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="56" height="10" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="12" y="56" width="56" height="10" rx="2"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="56" height="10" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="11.5" y="13" width="57" height="54" rx="2"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="57" height="54" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="launch-頁面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.7">
+        <g id="Launch" transform="translate(-595.000000, -411.000000)">
+            <g id="icon_basic-copy" transform="translate(584.000000, 398.687293)">
+                <g id="Group-3">
+                    <rect id="Rectangle-9" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="80" height="80"></rect>
+                    <use id="Rectangle-5" stroke="#FF6C00" mask="url(#mask-2)" stroke-width="4" stroke-dasharray="2" xlink:href="#path-1"></use>
+                    <use id="Rectangle-5-Copy-2" stroke="#FF6C00" mask="url(#mask-4)" stroke-width="4" stroke-dasharray="2" xlink:href="#path-3"></use>
+                    <use id="Rectangle-5-Copy" stroke="#FF6C00" mask="url(#mask-6)" stroke-width="6" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
