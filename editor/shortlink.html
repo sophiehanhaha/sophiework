@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>短址產生器</title>
+
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<style type="text/css">
+	body{
+		padding: 0px;
+		margin: 0px;
+		font-size: 16px;
+		font-weight: 100;
+	}
+	.navbar.sample {
+		height: 44px;
+		background-color: #15161F;
+		margin-bottom:0px;
+	}
+	.test{
+		border:1px solid red;
+	}
+	.shortSearch{
+		background-color: #FFC248;
+		height: 240px;
+	}
+	.shortText01{
+		font-size: 1.5em;
+		letter-spacing: 1px;
+		text-align: center;
+		color: #404041;
+		font-weight: 200;
+		padding: 20px ;
+		margin-top:30px;
+	}
+	.NoPadding{
+		padding: 0px;
+	}
+	.shortButton{
+		border:none;
+		height: 44px; 
+		width: 100%; 
+		color: #fff; 
+		background-color: #FF6C00;
+		letter-spacing: 0.1em;
+	}
+	.shortButton:hover,.shortButton:active{
+		border:none;
+		height: 44px; 
+		width: 100%; 
+		color: #fff; 
+		background-color: #F05623;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+	}
+	.padding10{
+		padding:20px 0px 0px 0px;
+		letter-spacing: 1px;
+	}
+	.shortImg{
+		width: 30px;
+
+	}
+	.shortQuote{
+		padding-left: 0.5em; 
+		color: #fff;
+	}
+  #shortBanner {
+    display: block;
+  }
+  .shortBg{
+  	background-color: #E9EFF0;
+  	padding: 40px 0px;
+
+  }
+  .shortList{
+  	background-color: #FFF;
+  	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
+
+  }
+  input[type=search] {
+    background-color: white;
+    background-image: url('img/icon_search.svg');
+    background-position: 50px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    border: none;
+    border-bottom: 1px solid #F6A623;
+	}
+	.shortUl{
+		list-style: none;
+		padding: 0px 20px;
+	}
+	.shortUl li{
+		border-bottom:1px solid #E2E2E2;
+		padding: 40px 20px 0px;
+	}
+	.shortCopy{
+		border: 1px solid #ff6c00;
+		border-radius:4px;
+		color:#ff6c00;
+		padding: 4px 10px;
+		font-size: 0.7em;
+		font-weight: 400;
+		margin-left: 30px;
+	}
+	a.shortCopy:hover{
+		border: 1px solid #ff6c00;
+		border-radius:4px;
+		color:#fff;
+		padding: 4px 20px;
+		font-size: 0.7em;
+		font-weight: 300;
+		background-color: #ff6c00;
+		text-decoration: none;
+		margin-left: 30px;
+	}
+	a.shortCopy:active, a.shortCopy:focus{
+		border: 1px solid #ff6c00;
+		border-radius:4px;
+		color:#fff;
+		padding: 4px 20px;
+		font-size: 0.7em;
+		font-weight: 300;
+		background-color: #ff6c00;
+		text-decoration: none;
+		margin-left: 30px;
+	}
+	.shortReport{
+		padding: 0px 10px;
+	}
+	.shortText02{
+		font-weight: 300;
+		color: #404041;
+	}
+	.shortLink{
+		color: #ff6c00;
+		font-size:0.6em;
+		font-weight: 400;
+	}
+	.shortLink:hover, .shortLink:active, .shortLink:focus{
+		color: #ff6c00;
+		font-size:0.6em;
+		font-weight: 400;
+		text-decoration: none;
+	}
+
+	.shortText03{
+		font-size: 0.6em;
+		color: #606060;
+		font-weight: 300;
+		padding: 10px 0px;
+	}
+	.shortText04{
+		font-size: 0.6em;
+		color: #9B9B9B;
+		padding-bottom: 5px;
+		width: 110px; 
+		float: left;
+		margin-right:20px;
+	}
+
+	.shortText05{
+		font-size: 0.6em;
+		color: #9B9B9B;
+		padding-bottom: 5px;
+
+	}
+	.shortBlock01{
+		padding-bottom: 40px; 
+	}
+	.shortQRcode{
+		width: 80px;
+	}
+	.clearfix{
+		clear: both;
+	}
+	.QRbg{
+		background-color: #404041;
+		width: 110px; 
+		border-radius: 10px;
+	}
+	.QRbg:hover{
+		background-color:#ff6c00;
+		-webkit-transition: background-color 0.4s ease-in-out;
+		transition: background-color 0.4s ease-in-out;
+	}
+
+	@media screen and (max-width: 800px) {
+	  #shortBanner {
+	    display: none;
+	  }
+	}
+</style>
+</head>
+
+
+<body>
+	<div class="navbar sample"><img src="img/NavBar.png" class="center-block img-responsive">
+	</div>
+
+	<div class="section shortSearch">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 shortText01">
+				不只是網址
+				</div>
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-10 col-sm-10 col-sx-8 NoPadding">
+						<input style="height: 44px;" type="text" required name="name" class="form-control" placeholder="請在此輸入連結">
+					</div>
+					<div class="col-md-2 col-sm-2 col-sx-4 NoPadding">
+						<button class="shortButton">生成短網址</button>
+					</div>					
+				</div>
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-sx-12" id="shortBanner">
+					<div class="col-md-4 col-sm-4 col-sx-4 padding10">
+						<img src="img/img_shortlink01.svg" class="shortImg">
+						<span class="shortQuote">快速生成短網址</span>
+					</div>
+					<div class="col-md-4 col-sm-4 col-sx-4 padding10">
+						<img src="img/img_shortlink02.svg" class="shortImg">
+						<span class="shortQuote">簡易客製視覺碼</span>
+					</div>
+					<div class="col-md-4 col-sm-4 col-sx-4 padding10">
+						<img src="img/img_shortlink03.svg" class="shortImg">
+						<span class="shortQuote">精準大數據分析</span>
+					</div>					
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="section shortBg">
+	<div class="container shortList NoPadding">
+		<input style="height: 44px;" type="search" placeholder="請在此搜尋.." name="search" class="form-control" placeholder="請在此輸入連結">
+		<div class="col-md-12">
+		<ul class="shortUl">
+		<li class="col-md-12">
+			<div class="col-md-12 NoPadding">
+				<div class="col-md-8 col-sm-12 col-sx-12 NoPadding">
+					<div class="col-md-12 shortText02 NoPadding">(短網址)</div>
+					<div class="col-md-12 NoPadding" style="padding:5px 0px;">
+						<div class="col-md-8 col-sm-6 col-sx-4 NoPadding">
+						<a href="#" class="shortLink">https://tmotx.com/zPmJGoRJ</a>
+						<a href="#" class="shortCopy">複製</a>
+						<a href="#" class="shortReport"><img src="img/icon_report.svg"></a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="shortText03 col-md-8 NoPadding">
+					https://www.pinterest.com/search/pins/?q=orange%20page&rs=typed&term_meta[]=orange%7Ctyped&term_meta[]=page%7Ctyped
+					</div>
+				</div>
+				<div class="row col-md-4 col-sm-12 col-sx-12 shortBlock01 NoPadding">
+					<div class="col-md-12 col-sm-12 col-sx-12">
+						<div class="shortText04">
+							<a href="#">
+							<div class="QRbg">
+							<img src="img/img_qrcode01.png" class="shortQRcode">
+							<img src="img/icon_download.svg">
+							</div>
+							</a>
+							<div>QRcode樣式一</div>
+						</div>
+						<div class="shortText04">
+							<a href="#">
+							<div class="QRbg">
+							<img src="img/img_qrcode02.png" class="shortQRcode">
+							<img src="img/icon_edit.svg">
+							</div>
+							</a>
+							<div>QRcode樣式二</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12 shortText05 NoPadding">2016-11-11 14:20</div>
+		</li>
+		<li class="col-md-12">
+			<div class="col-md-12 NoPadding">
+				<div class="col-md-8 col-sm-12 col-sx-12 NoPadding">
+					<div class="col-md-12 shortText02 NoPadding">活動名稱(問卷)</div>
+					<div class="col-md-12 NoPadding" style="padding:5px 0px;">
+						<div class="col-md-8 col-sm-6 col-sx-4 NoPadding">
+						<a href="#" class="shortLink">https://tmotx.com/zPmJGoRJ</a>
+						<a href="#" class="shortCopy">複製</a>
+						<a href="#" class="shortReport"><img src="img/icon_report.svg"></a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="shortText03 col-md-8 NoPadding">
+					https://www.pinterest.com/search/pins/?q=orange%20page&rs=typed&term_meta[]=orange%7Ctyped&term_meta[]=page%7Ctyped
+					</div>
+				</div>
+				<div class="row col-md-4 col-sm-12 col-sx-12 shortBlock01 NoPadding">
+					<div class="col-md-12 col-sm-12 col-sx-12">
+						<div class="shortText04">
+							<a href="#">
+							<div class="QRbg">
+							<img src="img/img_qrcode01.png" class="shortQRcode">
+							<img src="img/icon_download.svg">
+							</div>
+							</a>
+							<div>QRcode樣式一</div>
+						</div>
+						<div class="shortText04">
+							<a href="#">
+							<div class="QRbg">
+							<img src="img/img_qrcode02.png" class="shortQRcode">
+							<img src="img/icon_edit.svg">
+							</div>
+							</a>
+							<div>QRcode樣式二</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12 shortText05 NoPadding">2016-11-11 14:20</div>
+		</li>
+		<li class="col-md-12">
+			<div class="col-md-12 NoPadding">
+				<div class="col-md-8 col-sm-12 col-sx-12 NoPadding">
+					<div class="col-md-12 shortText02 NoPadding">活動名稱(一般)</div>
+					<div class="col-md-12 NoPadding" style="padding:5px 0px;">
+						<div class="col-md-8 col-sm-6 col-sx-4 NoPadding">
+						<a href="#" class="shortLink">https://tmotx.com/zPmJGoRJ</a>
+						<a href="#" class="shortCopy">複製</a>
+						<a href="#" class="shortReport"><img src="img/icon_report.svg"></a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="shortText03 col-md-8 NoPadding">
+					https://www.pinterest.com/search/pins/?q=orange%20page&rs=typed&term_meta[]=orange%7Ctyped&term_meta[]=page%7Ctyped
+					</div>
+				</div>
+				<div class="row col-md-4 col-sm-12 col-sx-12 shortBlock01 NoPadding">
+					<div class="col-md-12 col-sm-12 col-sx-12">
+						<div class="shortText04">
+							<a href="#">
+							<div class="QRbg">
+							<img src="img/img_qrcode01.png" class="shortQRcode">
+							<img src="img/icon_download.svg">
+							</div>
+							</a>
+							<div>QRcode樣式一</div>
+						</div>
+						<div class="shortText04">
+							<a href="#">
+							<div class="QRbg">
+							<img src="img/img_qrcode02.png" class="shortQRcode">
+							<img src="img/icon_edit.svg">
+							</div>
+							</a>
+							<div>QRcode樣式二</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12 shortText05 NoPadding">2016-11-11 14:20</div>
+		</li>
+		</ul>
+		</div>
+	</div>
+		
+	</div>
+</body>
+</html>

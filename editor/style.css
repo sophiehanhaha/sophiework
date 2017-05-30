@@ -54,7 +54,7 @@ html, body {
     padding: 0;
     top: 0px;
     width: 30px;
-    height: 50px;
+    height: 48px;
     font-size: 0;
     text-indent: -9999px;
     appearance: none;
@@ -146,13 +146,14 @@ html, body {
 /* 使用者 */
 
 .icon_user {
-    display: inline;
-    position: relative;
-    overflow: hidden;
+    display: inline-block;
+
     margin: 0;
     padding: 0;
     width: 40px;
-    height: 50px;
+    height: 40px;
+    background:#fff;
+
 }
 
 .inline {
