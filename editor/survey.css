@@ -373,3 +373,216 @@ display: inline-block;
    text-shadow: #FFE774 0px 0px 10px;
    transition: all 0.3s ease;
 }
+.bg_badge01{
+	height: 300px;
+	background: #91C4F2;
+	width: 100%;
+  margin-bottom:100px;
+}
+.img_badge01{
+	width:100%;
+	right:0px;
+	top:30px;
+	height: 400px;
+	position: absolute;
+	background: url(img/img_badge01.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 280px;
+}
+.bg_badge02{
+	height: 300px;
+	background:rgba(69,83,79,0.8);
+	width: 100%;
+  margin-bottom:100px;
+}
+.img_badge02{
+	width:100%;
+	right:0%;
+	top:0px;
+	height: 400px;
+	position: absolute;
+	background: url(img/img_badge02.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 330px;
+}
+.form_title02{
+  font-size:1.4rem;
+  text-align: center;
+  padding:10px 0px;
+}
+.form_g{
+  width: 400px;
+  margin:10px auto;
+}
+
+.form_register01{
+  line-height: 2rem;
+  font-size:1rem;
+  border-radius:2px;
+  margin:10px 0px 0px 0px;
+  color:#A5C4CE;
+  width:100%;
+  padding:10px;
+  border:1px solid #A5C4CE;
+  background: #fefefe;
+
+}
+.form_register02{
+  line-height: 2rem;
+  font-size:1rem;
+  border-radius:2px;
+  color:#9b9b9b;
+  width:60%;
+  padding:10px;
+  display: inline-block;
+  border:1px solid #A5C4CE;
+}
+.form_bt04{
+  line-height: 2rem;
+  font-size:0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.4);
+  border-radius: 4px;
+  color:#fff;
+  display: inline-block;
+  width:36%;
+  padding:10px 20px;
+  margin-left:10px;
+  background: #00C4A8;
+  border:1px solid #00C4A8;
+  transition: all 0.2s ease;
+}
+
+.form_bt04:hover{
+  background: #00AD95;
+  transition: all 0.2s ease;
+}
+.form_bt05{
+  line-height: 2rem;
+  font-size:0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.4);
+  border-radius: 4px;
+  color:#fff;
+  display: inline-block;
+  margin:20px 0px 0px 0px;
+  width:100%;
+  padding:10px 20px;
+  background: #FF6C00;
+  border:1px solid #F05623;
+  transition: all 0.2s ease;
+}
+.form_bt05:hover{
+  background: #F05623;
+  transition: all 0.2s ease;
+}
+.form_group01{
+  margin:20px 0px 10px 0px;
+  width: 100%;
+}
+.form_footer{
+  width: 100%;
+  color:#ccc;
+  font-size:0.8rem;
+  border-top: 0.5px solid #eee;
+  padding-top: 20px;
+  text-align: center;
+  margin-top:40px;
+}
+.lock_icon {
+    padding: 2px;
+    position: absolute;
+    display: block;
+    color: #fff;
+    z-index: 10;
+    top: -9px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #3FB6EC;
+    line-height: 1.5em;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.lock_icon:hover {
+    color: #fff;
+
+    background: #ff6c00;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+@media (max-width:1000px) {
+  .form_g{
+  width: 80%;
+  margin:10px auto;
+  }
+  .form_register01{
+  line-height: 2rem;
+  font-size:1rem;
+  border-radius:2px;
+  margin:10px 0px 0px 0px;
+  color:#A5C4CE;
+  width:100%;
+  padding:10px;
+  border:1px solid #A5C4CE;
+  background: #fefefe;
+  }
+  .form_bt04{
+  line-height: 2rem;
+  font-size:0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.4);
+  border-radius: 4px;
+  color:#fff;
+  display: inline-block;
+  width:50%;
+  padding:10px 0px;
+  margin-left:2px;
+  background: #00C4A8;
+  border:1px solid #00C4A8;
+  transition: all 0.2s ease;
+  }
+  .form_register02{
+  line-height: 2rem;
+  font-size:1rem;
+  border-radius:2px;
+  color:#9b9b9b;
+  width:46%;
+  padding:10px;
+  display: inline-block;
+  border:1px solid #A5C4CE;
+  }
+  .form_group01{
+  margin:20px 0px 10px 0px;
+  width: 100%;
+  }
+  .form_bt05{
+  line-height: 2rem;
+  font-size:0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.4);
+  border-radius: 4px;
+  color:#fff;
+  display: inline-block;
+  margin:20px 0px 0px 0px;
+  width:100%;
+  padding:10px 20px;
+  background: #FF6C00;
+  border:1px solid #F05623;
+  transition: all 0.2s ease;
+  }
+}
+.form_item_g{
+  font-size:2rem;
+}
