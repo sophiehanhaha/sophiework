@@ -34,20 +34,20 @@
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{margin-bottom:20px;}
-        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
-        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
+        #cboxTitle{position:absolute; bottom:-8px; left:0; text-align:center; width:100%; color:#333; font-size:14px;font-weight:700;}
+        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999; font-size:11px;line-height: 2em; padding-left: 10px;}
         #cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 5px 5px;}
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
-        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:5px; margin:0; overflow:visible; width:auto; background:none; }
         
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
         #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
-        #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
-        #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
-        #cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
+        #cboxPrevious{position:absolute; bottom:0px; left:0; color:cornflowerblue}
+        #cboxNext{position:absolute; bottom:0px; left:63px; color:cornflowerblue}
+        #cboxClose{position:absolute; bottom:0; right:0; display:block; color:orangered}
 
 /*
   The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill

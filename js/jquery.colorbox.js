@@ -60,9 +60,9 @@
 
 		// internationalization
 		current: "image {current} of {total}",
-		previous: "previous",
-		next: "next",
-		close: "close",
+		previous: "&#10094; previous",
+		next: "next &#10095;",
+		close: "&#10006; close",
 		xhrError: "This content failed to load.",
 		imgError: "This image failed to load.",
 
