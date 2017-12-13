@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_live</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="android_直播" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-259.000000, -547.000000)">
+        <g id="Group-6" transform="translate(244.000000, 528.000000)">
+            <g id="icon_live" transform="translate(15.000000, 19.000000)">
+                <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="0" width="13.1111115" height="9.83333361" rx="0.5"></rect>
+                <path d="M12.7833137,6.88443253 L17.4204935,8.8928406 C17.5218522,8.93674003 17.6396071,8.89016012 17.6835066,8.78880146 C17.6943737,8.76371051 17.6999805,8.73665771 17.6999805,8.70931451 L17.6999805,1.12123658 C17.6999805,1.01077963 17.6104374,0.921236581 17.4999805,0.921236581 C17.4732055,0.921236581 17.4467032,0.926612777 17.4220448,0.937046399 L12.7833137,2.89981582 L12.7833137,6.88443253 Z" id="Path-3" fill="#FFFFFF"></path>
+                <circle id="Oval-5" fill="#FF5050" cx="3.33333333" cy="3.33333333" r="1.66666667"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

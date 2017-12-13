@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="15px" viewBox="0 0 5 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_live_b</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="android_直播" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-283.000000, -544.000000)">
+        <g id="Group-6" transform="translate(244.000000, 528.000000)" fill="#FFFFFF">
+            <g id="Group-5" transform="translate(37.000000, 16.000000)">
+                <path d="M2.73652567,-4.77340389e-12 C5.1144172,1.28172363 6.7616,4.06179271 6.7616,7.28487304 C6.7616,10.3833225 5.23934158,13.0723593 3.00904155,14.4144 L2.34379177,13.4713988 C4.36075312,12.3913873 5.76368677,9.99274961 5.76368677,7.20714607 C5.76368677,4.35073927 4.28852844,1.90121979 2.18881591,0.863110558 L2.73652567,-4.73576733e-12 Z" id="icon_live_b" transform="translate(4.475208, 7.207200) scale(1, -1) translate(-4.475208, -7.207200) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
